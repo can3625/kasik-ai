@@ -6,7 +6,7 @@ import 'package:http_parser/http_parser.dart';
 import '../models/food_analysis_model.dart';
 
 class ApiService {
-static const String baseUrl = static const String baseUrl = 'https://kasik-ai-beckend.onrender.com'; 
+static const String baseUrl = 'https://kasik-ai-beckend.onrender.com'; 
 
   static MediaType _getMediaType(String path) {
     final lower = path.toLowerCase();
@@ -18,7 +18,7 @@ static const String baseUrl = static const String baseUrl = 'https://kasik-ai-be
     return MediaType('image', 'jpeg');
   }
 
-  static Future<FoodAnalysisResponsep> analyzeFood(File imageFile) async {
+  static Future<FoodAnalysisResponse> analyzeFood(File imageFile) async {
     try {
       var request = http.MultipartRequest('POST', Uri.parse('$baseUrl/analyze'));
 
