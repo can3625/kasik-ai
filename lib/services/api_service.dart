@@ -6,7 +6,7 @@ import 'package:http_parser/http_parser.dart';
 import '../models/food_analysis_model.dart';
 
 class ApiService {
-  static const String baseUrl = https://kasik-ai-beckend.onrender.com
+static const String baseUrl = '[https://kasik-ai-beckend.onrender.com](https://kasik-ai-beckend.onrender.com)';  
 
   static MediaType _getMediaType(String path) {
     final lower = path.toLowerCase();
